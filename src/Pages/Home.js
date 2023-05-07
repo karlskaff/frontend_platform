@@ -343,11 +343,11 @@ function Home() {
         <div className="wrapper" style={{ marginBottom: "3em" }}>
               <h2> Exchange Rate Line Chart</h2>
               <select value={timeframe} onChange={(event) => {setTimeframe(event.target.value);graphData();}}>
-                <option value="last week">Last week</option>
-                <option value="last month">Last month</option>
-                <option value="last three month">Last three month</option>
-                <option value="last six month">Last six month</option>
-                <option value="last year">Last year</option>
+                <option value="last week">Last Week</option>
+                <option value="last month">Last Month</option>
+                <option value="last three month">Last Three Month</option>
+                <option value="last six month">Last Six Month</option>
+                <option value="last year">Last Year</option>
               </select>
               
               <Line

@@ -84,13 +84,13 @@ function Statistics() {
     
     <div>
       <div className="select-container">
-        <label htmlFor="timeframe-select">Select a timeframe:</label>
+        <label htmlFor="timeframe-select">Select a Timeframe:</label>
       <select value={timeframe} onChange={(event) => {setTimeframe(event.target.value);statistics()}}>
-                <option value="last week">Last week</option>
-                <option value="last month">Last month</option>
-                <option value="last three month">Last three month</option>
-                <option value="last six month">Last six month</option>
-                <option value="last year">Last year</option>
+                <option value="last week">Last Week</option>
+                <option value="last month">Last Month</option>
+                <option value="last three month">Last Three Month</option>
+                <option value="last six month">Last Six Month</option>
+                <option value="last year">Last Year</option>
       </select>
       </div>
     

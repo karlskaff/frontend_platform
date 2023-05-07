@@ -222,7 +222,7 @@ function App() {
   return (
     <>
       <Router>
-      <AppBar position="fixed">
+      <AppBar position="fixed" style={{backgroundColor: 'rgba(1, 136, 166, 1)'}}>
       <Toolbar>
         <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleMenuClick}>
 
@@ -237,7 +237,7 @@ function App() {
         <div style={{ marginLeft: 'auto' }}>
           
           {menuOpen && (
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'left', backgroundColor: 'rgba(3, 136, 166, 0.9)', padding: '1em', position: 'absolute', top: '64px', left: '1px', right: '150mv', borderRadius:"10px" }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'left', backgroundColor: 'rgba(1, 35, 64, 0.85)', padding: '1em', position: 'absolute', top: '64px', left: '1px', right: '150mv', borderRadius:"10px" }}>
               <Link to="/" style={{ textDecoration: "none", color: "white", margin: '0.5em' }}>
                 <Button color="inherit" onClick={handleMenuClick}>Home</Button>
               </Link>
