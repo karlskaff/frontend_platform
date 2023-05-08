@@ -4,6 +4,9 @@ import { React, useState, useEffect } from "react";
 import NewsItem from './NewsItem';
 import './newsItem.css'
 
+// This section was written with the help of a youtube video
+// A reference to the video: https://youtu.be/AfifHeANwe0
+//In this file we are using the news Items from the NewsItem.js file in order to display them on the News Page.
 
 const NewsList = () =>{
     const[articles,setArticles] = useState([])
@@ -17,7 +20,11 @@ const NewsList = () =>{
         getArticles()
     },[])
     return (
+
         <div className='news-list-container'>
+            <Typography variant="h2" gutterBottom>
+              News
+            </Typography>
             {articles.map(article => {
                 return (
                     <div className='news-item'>

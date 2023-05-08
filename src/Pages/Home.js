@@ -74,6 +74,9 @@ function Home() {
       });
   }
 
+// This graph was writen based on the react-chartjs-2 documentation
+// We are initiating a different GET request based on the selected time
+//For each time frame selected,the appropriate data will be received and displayed on the graph
   function graphData() {
     
     let url;
@@ -106,50 +109,10 @@ function Home() {
       });
   }
 
-  
-
   useEffect(fetchRates, []);
   useEffect(graphData,[])
-  console.log(graphDate.toString());
 
-// let buyDataSelected, sellDataSelected;
-// if (timeframe === "last day") {
-//   buyDataSelected = buyDataLastDay;
-//   sellDataSelected = sellDataLastDay;
-// } else if (timeframe === "last week") {
-//   buyDataSelected = buyDataLastWeek;
-//   sellDataSelected = sellDataLastWeek;
-// } else if (timeframe === "last month") {
-//   buyDataSelected = buyDataLastMonth;
-//   sellDataSelected = sellDataLastMonth;
-// } else if (timeframe === "last year") {
-//   buyDataSelected = buyDataLastYear;
-//   sellDataSelected = sellDataLastYear;
-// }
-
-// const data = {
-//   labels: graphDateSelected,
-//   datasets: [
-//     {
-//       label: "Buy USD",
-//       data: buyDataSelected,
-//       backgroundColor: "#7bc314",
-//       borderColor: "#7bc314",
-//       pointBorderColor: "black",
-//       tension: 0.4
-//     },
-//     {
-//       label: "Sell USD",
-//       data: sellDataSelected,
-//       backgroundColor: "#ff0000",
-//       borderColor: "#ff0000",
-//       pointBorderColor: "black",
-//       tension: 0.4
-//     }
-//   ]
-// };
-
-
+  // Setting the data to show on the graph. The data are the one received from the above initiated requests, based on the time frame
   const data ={
     labels: graphDate,
     datasets: [{
@@ -175,10 +138,7 @@ function Home() {
       legend: true
     },
     scales:{
-      // y: {
-      //   min: 3,
-      //   max: 6
-      // }
+
     }
   }
 
